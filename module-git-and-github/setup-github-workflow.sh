@@ -16,8 +16,9 @@ cd {your repo}
 # psp is for "Pitt Software Practices"
 git remote add psp {PSP fork of your repo here - either SSH or https link}
 
+# this can also be accomplished above using: git remote add -f psp...
 git fetch psp
-# this syncs all code from the PSP repo to your local repository
+# this syncs all code from the PSP repo to your local repo
 
 # look at all available branches on the remote repositories, -r is for remote
 git branch -r
@@ -27,6 +28,7 @@ git branch -r
 # move existing master out of the way
 git branch -m master mymaster
 
+# checkout master branch that tracks psp/master
 git checkout -t psp/master
 
 # delete old master branch
